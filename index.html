@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset ="UTF-8">
+    <meta name="viewport" content ="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  </body>
+  <main id="main-doc">
+    <nav id="navbar">
+      <header><h1>HTML Documentation</h1></header>
+      <ul>
+        <li class="Here"><a class="nav-link" href="#INTRODUTION_TO_HTML:_HyperText_Markup_Language">INTRODUTION TO HTML: HyperText Markup Language</a></li>
+        <li class="Here"><a class="nav-link" href="#What_you_should_already_know">What you should already know</a></li>
+        <li class="Here"><a class="nav-link" href="#What_is_HTML?">What is HTML?</a></li>
+        <li class="Here"><a class="nav-link" href="#Anatomy_of_an_HTML_element">Anatomy of an HTML element</a></li>
+        <li class="Here"><a class="nav-link" href="#Nesting_elements">Nesting elements</a></li>
+        <li class="Here"><a class="nav-link" href="#Attributes">Attributes</a></li>
+        <li class="Here"><a class="nav-link" href="#Boolean_attributes">Boolean attributes</a></li>
+        <li class="Here"><a class="nav-link" href="#Anatomy_of_an_HTML_document">Anatomy of an HTML document</a></li>
+        <li class="Here"><a class="nav-link" href="#Entity_references:_Including_special_characters_in_HTML">Entity references: Including special characters in HTML</a></li>
+        <li class="Here"><a class="nav-link" href="#HTML_comments">HTML comments</a></li>
+        <li class="Here"><a class="nav-link" href="#Summary">Summary</a></li>
+        <li class="Here"><a class="nav-link" href="#Reference">Reference</a></li>
+    </nav>
+    <body>
+
+
+      <section class="main-section" id="INTRODUTION_TO_HTML:_HyperText_Markup_Language">
+        <header><h1>INTRODUTION TO HTML: HyperText Markup Language</h1></header>
+        <p>
+          HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content. Other technologies besides HTML are generally used to describe a web page's appearance/presentation (CSS) or functionality/behavior (JavaScript).
+
+"Hypertext" refers to links that connect web pages to one another, either within a single website or between websites. Links are a fundamental aspect of the Web. By uploading content to the Internet and linking it to pages created by other people, you become an active participant in the World Wide Web.
+        </p>
+      </section>
+      <section class="main-section" id="What_you_should_already_know">
+        <header><h1>What you should already know</h1></header>
+      <p>This guide assumes you have the following basic background:</p>
+      <ul>
+        <li>A general understanding of the Internet and the World Wide Web (WWW).</li>
+        <li>Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about HTML.</li>
+        <li>You don't need any previous HTML knowledge, but you should have at least basic familiarity with using computers and using the web passively (i.e., just looking at it and consuming content). You should have a basic work environment set up (as detailed in Installing basic software), and understand how to create and manage files (as detailed in Dealing with files). 
+
+        </li>
+      </section>
+      <section class="main-section" id="What_is_HTML?">
+        <header><h1>What is HTML?
+</h1></header>
+      <p>HTML (HyperText Markup Language) is a markup language that tells web browsers how to structure the web pages you visit. It can be as complicated or as simple as the web developer wants it to be. HTML consists of a series of elements, which you use to enclose, wrap, or mark up different parts of content to make it appear or act in a certain way. The enclosing tags can make content into a hyperlink to connect to another page, italicize words, and so on. For example, consider the following line of text:</p>
+        <code>My cat is very grumpy</code>
+        <p>If we wanted the text to stand by itself, we could specify that it is a paragraph by enclosing it in a paragraph <code>&lt;p&gt;</code> element:
+        </p>
+        <code>&lt;p&gt;My cat is very grumpy&lt;/p&gt;</code>
+      </section>
+      <section class="main-section" id="Anatomy_of_an_HTML_element">
+        <header><h1>Anatomy of an HTML element
+</h1></header>
+      <p>Let's further explore our paragraph element from the previous section:</p>
+      <img src="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started/grumpy-cat-small.png" class="img-fluid">
+      <p>The anatomy of our element is:</p>
+      <ul>
+        <li><strong>The opening tag:</strong> This consists of the name of the element (in this example, p for paragraph), wrapped in opening and closing angle brackets. This opening tag marks where the element begins or starts to take effect. In this example, it precedes the start of the paragraph text.
+        <li><strong>The content:</strong> This is the content of the element. In this example, it is the paragraph text.
+        </li>
+        <li><strong>The closing tag:</strong> This is the same as the opening tag, except that it includes a forward slash before the element name. This marks where the element ends. Failing to include a closing tag is a common beginner error that can produce peculiar results.
+      </section>
+      <section class="main-section" id="Nesting_elements">
+        <header><h1>Nesting elements</h1></header>
+        <p>Elements can be placed within other elements. This is called nesting. If we wanted to state that our cat is very grumpy, we could wrap the word very in a &lt;strong&gt; element, which means that the word is to have strong(er) text formatting:</p>
+        <code>&lt;p&gt;My cat is &lt;strong&gt;very&lt;/strong&gt; grumpy.&lt;/p&gt;</code>
+      </section>
+      <section class="main-section" id="Attributes">
+        <header><h1>Attributes</h1></header>
+        <p>Elements can also have attributes. Attributes look like this:</p>
+        <img src="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started/grumpy-cat-attribute-small.png">
+        <p>Attributes contain extra information about the element that won't appear in the content. In this example, the class attribute is an identifying name used to target the element with style information.
+
+An attribute should have:</p>
+<ul>
+  <li>A space between it and the element name. (For an element with more than one attribute, the attributes should be separated by spaces too.)</li>
+  <li>The attribute name, followed by an equal sign.</li>
+  <li>An attribute value, wrapped with opening and closing quote marks.</li>
+      </section>
+      <section class="main-section" id="Boolean_attributes">
+        <header><h1>Boolean attributes</h1></header>
+        <p>Sometimes you will see attributes written without values. This is entirely acceptable. These are called Boolean attributes. Boolean attributes can only have one value, which is generally the same as the attribute name.For example: </p>
+        <code>&lt;input type="text" disabled="disabled" /&gt;</code>
+
+
+        </section>
+      <section class="main-section" id="Anatomy_of_an_HTML_document">
+        <header><h1>Anatomy of an HTML document
+</h1></header>
+<p>Individual HTML elements aren't very useful on their own. Next, let's examine how individual elements combine to form an entire HTML page:</p>
+<div>
+<code>&lt;!DOCTYPE html&gt;<br>
+  &lt;html lang="en-US"&gt;<br>
+  &nbsp&nbsp&lt;head&gt;<br>
+    &nbsp&nbsp&nbsp&nbsp&lt;meta charset="utf-8" /&gt;<br>
+    &nbsp&nbsp&nbsp&nbsp&lt;title&gt;My test page &lt;/title&gt;<br>
+  &nbsp&nbsp&lt;/head&gt;<br>
+  &nbsp&nbsp&nbsp&nbsp&lt;body&gt;<br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;p>This is my page &lt;/p&gt;<br>
+  &nbsp&nbsp&nbsp&nbsp&lt;/body&gt;<br>
+&lt;/html&gt;</code></div>
+<p>Here we have:</p>
+<ol>
+  <li><code>&lt;!DOCTYPE html&gt;</code>: The doctype. When HTML was young (1991-1992), doctypes were meant to act as links to a set of rules that the HTML page had to follow to be considered good HTML. Doctypes used to look something like this:</li>
+  <code>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</code>
+  <li><code>&lt;html&gt;&lt;/html&gt;</code>: The <code>&lt;/html&gt;</code> element. This element wraps all the content on the page. It is sometimes known as the root element.</li>
+    <li>
+      <code>&lt;/head&gt;&lt;/head&gt;</code>: The <code>&lt;/head&gt;</code> element. This element acts as a container for everything you want to include on the HTML page, that isn't the content the page will show to viewers. This includes keywords and a page description that would appear in search results, CSS to style content, character set declarations, and more. You will learn more about this in the next article of the series.
+    </li>
+      </section>
+      <section class="main-section" id="Entity_references:_Including_special_characters_in_HTML">
+        <header><h1>Entity references: Including special characters in HTML</h1></header>
+        <p>In HTML, the characters <code>&lt;</code>, <code>&gt;</code>,<code>&quot;</code>,<code>&apos;</code> and <code>&amp;</code> are special characters. They are parts of the HTML syntax itself. So how do you include one of these special characters in your text? For example, if you want to use an ampersand or less-than sign, and not have it interpreted as code.You do this with character references. These are special codes that represent characters, to be used in these exact circumstances. Each character reference starts with an ampersand (&), and ends with a semicolon (;).</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Literal character</th>
+              <th>Character reference equivalent</th>
+            </tr>
+          <tbody>
+            <tr>
+              <td>&lt;</td>
+              <td><code>&amp;lt;</code></td>
+            </tr>
+            <tr>
+              <td>&gt;</td>
+              <td>
+                <code> &amp;gt;</code>
+                </td>
+            </tr>
+            <tr>
+              <td>"</td>
+              <td>
+                <code> &ampquot;</code>
+                </td>
+            </tr>
+            <tr>
+              <td>'</td>
+              <td>
+                <code> &ampapos;</code>
+                </td>
+            </tr>
+            <tr>
+              <td>&</td>
+              <td>
+                <code> &amp;amp;</code>
+                </td>
+            </tr>
+        </table>    
+      </section>
+      <section class="main-section" id="HTML_comments">
+        <header><h1>HTML comments
+</h1></header>
+<p>HTML has a mechanism to write comments in the code. Browsers ignore comments, effectively making comments invisible to the user. The purpose of comments is to allow you to include notes in the code to explain your logic or coding. This is very useful if you return to a code base after being away for long enough that you don't completely remember it. Likewise, comments are invaluable as different people are making changes and updates.
+
+To write an HTML comment, wrap it in the special markers <code>&lt;!-- and --&gt;</code>. For example:</p>
+<code><p>I'm not inside a comment</p>
+
+&lt;!-- &lt;p&gt;I am!&lt;/p&gt; -->&lt;/code&gt;</code>
+      </section>
+      <section class="main-section" id="Summary">
+          <header><h1>Summary</h1></header>
+          <p>You made it to the end of the article! We hope you enjoyed your tour of the basics of HTML.
+
+At this point, you should understand what HTML looks like, and how it works at a basic level. You should also be able to write a few elements and attributes. The subsequent articles of this module go further on some of the topics introduced here, as well as presenting other concepts of the language.</p>
+        </section>
+        <section class="main-section" id="Reference">
+          <header><h1>Reference</h1></header>
+          <ul>
+            <li>All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started">MDN
+        </section>

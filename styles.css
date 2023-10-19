@@ -1,0 +1,103 @@
+/* Global styles */
+body, html {
+  min-width: 290px;
+  color: #4d4e53;
+  background-color: #ffffff;
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+code {
+  background-color: #f7f7f7;
+  border: 1px solid transparent;
+  width: 100%;
+}
+
+table, table td, table th {
+  border: 5px solid black;
+  vertical-align: middle;
+  border-collapse: collapse;
+  padding: 12px;
+  width: 500px;
+}
+
+thead {
+  background-color: #f7f7f7;
+}
+
+/* Navbar styles */
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: rgba(0, 22, 22, 0.4);
+}
+
+nav {
+  display: block;
+}
+
+header {
+  color: black;
+  margin: 10px;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: thin;
+}
+
+.Here {
+  border-bottom: solid;
+  list-style: none;
+  padding: 15px;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+  body {
+    margin: 0;
+  }
+  #navbar {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  body {
+    margin-left: 320px;
+  }
+}
+
+/* Additional media queries for smaller screens if needed */
+@media only screen and (max-width: 400px) {
+  /* Add specific styles for smaller screens if necessary */
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* To remove any extra space around the image */
+  margin: 0 auto; /* Center the images within their containers */
+}
+table {
+  max-width: 100%; /* Adjust the table's maximum width */
+  width: 100%;
+  margin: 0 auto; /* Center the table horizontally */
+  font-size: 16px; /* Set the default font-size for the table */
+}
+@media only screen and (max-width: 768px) {
+  table {
+    font-size: 14px; /* Reduce font-size for smaller screens */
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 480px) {
+  table {
+    font-size: 12px; /* Further reduce font-size for mobile screens */
+  }
+}
